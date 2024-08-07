@@ -10,10 +10,8 @@ const RegistrationForm: React.FC = () => {
     event.preventDefault();
     try {
       await registerUser(name, email, password);
-      // Show success message or redirect
     } catch (error) {
       console.error('Registration failed', error);
-      // Show error message
     }
   };
 
@@ -41,7 +39,7 @@ const RegistrationForm: React.FC = () => {
         placeholder="Senha"
         required
       />
-      <button type="submit">Register</button>
+      <button type="submit">Registrar</button>
     </form>
   );
 };
